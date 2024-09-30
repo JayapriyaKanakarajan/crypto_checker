@@ -1,0 +1,50 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+/* Target the specific wrapper for the mat-select */
+:host ::ng-deep .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+    background-color: rgba(0, 0, 0, 0.8);  /* Semi-transparent black background */
+}
+
+/* Style the select input text */
+:host ::ng-deep .mat-mdc-form-field-type-mat-select .mat-mdc-select-value {
+    color: white !important;  /* White text for selected value */
+}
+
+/* Style the label of the select */
+:host ::ng-deep .mat-mdc-form-field-type-mat-select .mdc-floating-label {
+    color: white !important;  /* White label */
+}
+
+/* Style the outline of the select field */
+:host ::ng-deep .mat-mdc-form-field-type-mat-select .mdc-notched-outline__notch {
+    border-color: white !important;  /* White border */
+}
+
+/* Change the border color when focused */
+:host ::ng-deep .mat-mdc-form-field-type-mat-select .mat-mdc-form-field-focused .mdc-notched-outline__notch {
+    border-color: #009688 !important;  /* Teal outline on focus */
+}
+
+/* Dropdown panel styling (the options panel) */
+:host ::ng-deep .mat-select-panel {
+    background-color: #18122B;  /* Dark background for the dropdown */
+    color: white !important;  /* White text for the options */
+}
+
+/* Style each option in the dropdown */
+:host ::ng-deep .mat-option {
+    background-color: #18122B;  /* Dark background for options */
+    color: white !important;  /* White text */
+}
+
+:host ::ng-deep .mat-option:hover {
+    background-color: #009688 !important;  /* Teal background on hover */
+}
+
+/* Style the selected option */
+:host ::ng-deep .mat-selected {
+    background-color: #009688 !important;  /* Teal background for the selected option */
+    color: white !important;  /* White text for the selected option */
+}
